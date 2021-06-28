@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=polybar base
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Polybar
+Name=Polybar
+Comment[en_US]=custom taskbar
+Comment=custom taskbar

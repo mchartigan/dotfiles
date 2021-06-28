@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Trash Icon
+Icon=user-trash
+Exec=/home/mark/Trash/trash.sh -d
+
