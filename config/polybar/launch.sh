@@ -17,7 +17,7 @@ while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # Launch bar1 and bar2
 DISPLAY1="$(xrandr -q | grep 'XWAYLAND' | cut -d ' ' -f1)"
-[[ ! -z "$DISPLAY1" ]] && MONITOR="$DISPLAY1" polybar base &
+[[ ! -z "$DISPLAY1" ]] && MONITOR="$DISPLAY1" polybar --config=/home/mark/dotfiles/config/polybar/config base &
 
 # DISPLAY2="$(xrandr -q | grep 'XWAYLAND' | cut -d ' ' -f1)"
 # [[ ! -z $DISPLAY2 ]] && MONITOR=$DISPLAY2 polybar top2 &

@@ -1,7 +1,13 @@
 # vscode is too big lol
 vscode/
-config/Code/
-config/neofetch/
-config/thefuck/
-config/goa-1.0/
-config/nautilus
+
+config/*
+!config/dconf/
+!config/gnome-session/
+!config/gtk-2.0/
+!config/gtk-3.0/
+!config/gtk-4.0/
+!config/polybar/
+!config/gnome-initial-setup-done
+!config/user-dirs.dirs
+!config/user-dirs.locale

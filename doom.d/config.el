@@ -72,3 +72,37 @@
                100)
           '(85 . 50) '(100 . 100)))))
  (global-set-key (kbd "C-c t t") 'toggle-transparency)
+
+(require 'ox-publish)
+(setq org-publish-project-alist
+      '(
+
+        ("org-notes"
+         :base-directory "~/Programming/Github/mchartigan.github.io/org/"
+         :base-extension "org"
+         :publishing-directory "~/Programming/Github/mchartigan.github.io/"
+         :recursive t
+         :publishing-function org-html-publish-to-html
+         :headline-levels 4
+         :auto-preamble t
+         :headline-numbering f
+         )
+
+        ("org-static"
+         :base-directory "~/Programming/Github/mchartigan.github.io/org/"
+         :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
+         :publishing-directory "~/Programming/Github/mchartigan.github.io/"
+         :recursive t
+         :publishing-function org-publish-attachment
+         )
+
+        ("org"
+         :components ("org-notes" "org-static")
+         )
+
+        ))
+
+
+(setq org-html-postamble t)
+(setq org-html-postamble-format
+      '(("en" "<p class=\"postamble\">Author: %a (%e)<br>Last Modified: %T<br>%c<br>Background created using <a href=https://github.com/nickymarino/virgo>Virgo</a></p>")))

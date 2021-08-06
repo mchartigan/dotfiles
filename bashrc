@@ -116,8 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# alias emacs='emacs -nw'
-alias emacs=emacs27
+# aliases
+alias emacs=emacs27             # emacs
+alias octopi=pi@octopi.local    # octopi
 # Add TeX and doom-emacs to PATH
 export PATH=/Library/TeX/texbin:$PATH:$HOME/.emacs.d/bin
 
