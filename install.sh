@@ -8,7 +8,7 @@
 
 DIR=~/dotfiles
 OLDDIR=~/dotfiles.old
-FILES="bashrc vscode emacs.d doom.d config"
+FILES="bashrc doom.d config"
 
 ###
 
